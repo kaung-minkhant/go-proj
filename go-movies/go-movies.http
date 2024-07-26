@@ -1,0 +1,34 @@
+GET http://localhost:8000/movies
+
+###
+
+GET http://localhost:8000/movies/1
+
+###
+
+POST http://localhost:8000/movies
+Content-Type: application/json
+
+{
+  "isbn": "23456",
+  "director": {
+    "firstname": "shunn",
+    "lastname": "james"
+  }
+}
+###
+
+DELETE http://localhost:8000/movies/1
+
+###
+PUT http://localhost:8000/movies/8659
+Content-Type: application/json
+
+{
+"isbn": "23456",
+    "title": "Known title",
+    "director": {
+      "firstname": "shunn",
+      "lastname": "james"
+    }
+}
