@@ -1,0 +1,32 @@
+GET http://localhost:8080/book
+
+###
+
+GET http://localhost:8080/book/1
+
+###
+
+GET http://localhost:8080/book/name/shunn
+
+
+###
+
+POST http://localhost:8080/book
+Content-Type: application/json
+
+{
+  "name": "shunn",
+  "author": "polar",
+  "publication": "12345"
+}
+
+###
+PUT http://localhost:8080/book/1
+Content-Type: application/json
+
+{
+  "name": "shunn le"
+}
+
+###
+DELETE http://localhost:8080/book/1
