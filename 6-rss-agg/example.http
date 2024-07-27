@@ -1,0 +1,8 @@
+GET http://localhost:8080
+
+###
+
+GET http://localhost:8080/v1/healthz
+
+###
+GET http://localhost:8080/v1/error
