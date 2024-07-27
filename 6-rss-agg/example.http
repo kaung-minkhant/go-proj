@@ -6,3 +6,49 @@ GET http://localhost:8080/v1/healthz
 
 ###
 GET http://localhost:8080/v1/error
+
+###
+GET http://localhost:8080/v1/users
+authorization: ApiKey 5d93b5f8cb649a8f6717f95428c3ed667c94a1f875d98272fb3514c1b207a5ee
+
+###
+POST http://localhost:8080/v1/users
+Content-Type: application/json
+
+{
+  "name": "shunn james"
+}
+
+###
+POST http://localhost:8080/v1/feeds
+Content-Type: application/json
+Authorization: ApiKey 5d93b5f8cb649a8f6717f95428c3ed667c94a1f875d98272fb3514c1b207a5ee
+
+{
+  "name": "Boot Dev Blog",
+  "url": "https:/blog.boot.dev/index.xml"
+}
+
+###
+GET http://localhost:8080/v1/feeds
+
+###
+POST http://localhost:8080/v1/feedfollows
+Authorization: ApiKey 5d93b5f8cb649a8f6717f95428c3ed667c94a1f875d98272fb3514c1b207a5ee
+Content-Type: application/json
+
+{
+  "feed_id": "a6021169-e7bc-4d86-a47d-3ef43ebc4962"
+}
+
+###
+GET http://localhost:8080/v1/feedfollows
+Authorization: ApiKey 5d93b5f8cb649a8f6717f95428c3ed667c94a1f875d98272fb3514c1b207a5ee
+
+###
+DELETE http://localhost:8080/v1/feedfollows/88580807-6dba-4ff5-b680-3ad1820f8668
+Authorization: ApiKey 5d93b5f8cb649a8f6717f95428c3ed667c94a1f875d98272fb3514c1b207a5ee
+
+###
+GET http://localhost:8080/v1/posts
+Authorization: ApiKey 5d93b5f8cb649a8f6717f95428c3ed667c94a1f875d98272fb3514c1b207a5ee
