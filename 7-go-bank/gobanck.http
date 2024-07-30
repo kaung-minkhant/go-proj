@@ -1,0 +1,26 @@
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "number": "be4f2d7b-9676-45ff-8277-c6e03bf670b0",
+  "password": "shunn"
+}
+###
+GET http://localhost:8080/accounts
+
+###
+GET http://localhost:8080/accounts/494fc1d1-6f2f-4c9d-a1ae-8539fd43ca87
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnb2JhbmsiLCJzdWIiOiJhY2NvdW50IGp3dCB0b2tlbiIsImF1ZCI6WyJrYXVuZ21pbiBraGFudCJdLCJleHAiOjUzMjIzMDczNTcsImlhdCI6MTcyMjMwNzM1NywianRpIjoiNDk0ZmMxZDEtNmYyZi00YzlkLWExYWUtODUzOWZkNDNjYTg3IiwiYWNjb3VudF9udW1iZXIiOiJiZTRmMmQ3Yi05Njc2LTQ1ZmYtODI3Ny1jNmUwM2JmNjcwYjAifQ.z1JzuIPAw40ego_oguOAsKmUsbQSQuV2cbKz87SS8sQ
+
+###
+POST http://localhost:8080/accounts
+Content-Type: application/json
+
+{
+  "first_name": "kaung",
+  "last_name": "min khant",
+  "password": "shunn"
+}
+
+###
+DELETE http://localhost:8080/accounts/ad4cd4e3-7c73-4b49-aaf1-252519be5f6a

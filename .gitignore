@@ -2,3 +2,4 @@ tokens.txt
 6-rss-agg
 !6-rss-agg/
 .env
+bin/
